@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup blur</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="content">
+        <h2>This is article title</h2>
+        <button id="open-popup">Open popup</button>
+        <p>
+          <img src="/image/francesco-ungaro-BIUPQYEAhXo-unsplash.jpg" alt="" />
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Necessitatibus at ipsum maiores fuga voluptas eos debitis, labore
+          eveniet vero modi cumque, assumenda voluptate temporibus blanditiis
+          aperiam ea doloribus quod amet.
+        </p>
+        <p>
+          Ipsum cumque tempore, ut voluptatum tenetur magni dolores nihil
+          praesentium quos atque vero dolor quidem officia culpa dolorum
+          doloribus explicabo quisquam maiores quo expedita optio unde deserunt?
+          Optio, officiis fugiat?
+        </p>
+        <p>
+          Asperiores quidem autem pariatur aperiam dolores rem blanditiis alias,
+          consequatur iure facilis dicta, dolore, cum fugit iste! Ipsa aliquam,
+          esse facere obcaecati nulla tenetur doloribus cum dicta, aut nesciunt
+          earum?
+        </p>
+        <p>
+          Tempora quos accusamus tenetur error modi adipisci, nulla voluptatum
+          atque beatae ipsum laudantium! Molestiae pariatur, consectetur, ab
+          nobis cumque ratione tenetur reprehenderit, numquam eum laudantium
+          nisi laborum tempore expedita eius.
+        </p>
+        <p>
+          A veniam ex quidem, officia tempora, aspernatur perferendis sed eos
+          nam reiciendis similique porro. Voluptates saepe dolorum ab excepturi.
+          Consequuntur distinctio obcaecati totam amet? Rem harum praesentium
+          quos voluptates animi.
+        </p>
+      </div>
+    </div>
+
+    <div class="popup">
+      <button class="close-btn">&times;</button>
+      <h2>This is popup title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+        nostrum voluptatum, doloribus consectetur corrupti, nam provident quod
+        perferendis amet voluptas eum. Sapiente, voluptate expedita. Qui
+        voluptatem nihil cum quaerat nostrum!
+      </p>
+    </div>
+
+    <script src="script.js">
+            document.querySelector("#open-popup").addEventListener("click", function () {
+        document.body.classList.add("active-popup");
+      });
+
+      document
+        .querySelector(".popup .close-btn")
+        .addEventListener("click", function () {
+          document.body.classList.remove("active-popup");
+        });
+    </script>
+  </body>
+</html>
