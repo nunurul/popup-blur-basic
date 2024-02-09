@@ -65,16 +65,36 @@
 
       <div class="popup-2">
         <button class="close-btn">&times;</button>
-        <h2>This is popup title</h2>
+        <h2>This is popup halo</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          nostrum voluptatum, doloribus consectetur corrupti, nam provident quod
-          perferendis amet voluptas eum. Sapiente, voluptate expedita. Qui
-          voluptatem nihil cum quaerat nostrum!
+          nostrum voluptatum
         </p>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+            let container = document.querySelector(".container");
+
+      document.querySelector("#open-popup").addEventListener("click", function () {
+        container.classList.add("active-popup");
+      });
+
+      document
+        .querySelector(".popup .close-btn")
+        .addEventListener("click", function () {
+          container.classList.remove("active-popup");
+        });
+
+      document.querySelector("#halo-popup").addEventListener("click", function () {
+        container.classList.add("halo-popup");
+      });
+
+      document
+        .querySelector(".popup-2 .close-btn")
+        .addEventListener("click", function () {
+          container.classList.remove("halo-popup");
+        });
+    </script>
   </body>
 </html>
