@@ -12,6 +12,7 @@
         <div class="content">
           <h2>This is article title</h2>
           <button id="open-popup">Open popup</button>
+          <button id="halo-popup">halo popup</button>
           <p>
             <img
               src="/image/francesco-ungaro-BIUPQYEAhXo-unsplash.jpg"
@@ -61,22 +62,19 @@
           voluptatem nihil cum quaerat nostrum!
         </p>
       </div>
+
+      <div class="popup-2">
+        <button class="close-btn">&times;</button>
+        <h2>This is popup title</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          nostrum voluptatum, doloribus consectetur corrupti, nam provident quod
+          perferendis amet voluptas eum. Sapiente, voluptate expedita. Qui
+          voluptatem nihil cum quaerat nostrum!
+        </p>
+      </div>
     </div>
 
-    <script src="script.js">
-      let container = document.querySelector(".container");
-
-      document
-        .querySelector("#open-popup")
-        .addEventListener("click", function () {
-          container.classList.add("active-popup");
-        });
-
-      document
-        .querySelector(".popup .close-btn")
-        .addEventListener("click", function () {
-          container.classList.remove("active-popup");
-        });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
