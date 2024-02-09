@@ -66,17 +66,17 @@
     margin-top ease-in-out 300ms;
 }
 
-body.active-popup {
+.container.active-popup {
   overflow: hidden;
 }
 
-body.active-popup .main {
+.container.active-popup .main {
   filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.08);
   transition: filter 0ms ease-in-out 0ms;
 }
 
-body.active-popup .popup {
+.container.active-popup .popup {
   top: 50%;
   opacity: 1;
   margin-top: 0;

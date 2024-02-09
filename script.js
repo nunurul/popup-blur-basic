@@ -1,9 +1,11 @@
-document.querySelector("#open-popup").addEventListener("click", function () {
-  document.body.classList.add("active-popup");
-});
+// let container = document.querySelector(".container");
 
-document
-  .querySelector(".popup .close-btn")
-  .addEventListener("click", function () {
-    document.body.classList.remove("active-popup");
-  });
+// document.querySelector("#open-popup").addEventListener("click", function () {
+//   container.classList.add("active-popup");
+// });
+
+// document
+//   .querySelector(".popup .close-btn")
+//   .addEventListener("click", function () {
+//     container.classList.remove("active-popup");
+//   });
